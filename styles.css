@@ -259,4 +259,29 @@ footer {
 	.hourly-grid {
 		grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
 	}
+
+	/* Galerie */
+#galerie {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
 }
